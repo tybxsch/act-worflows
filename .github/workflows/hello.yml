@@ -1,0 +1,12 @@
+name: Exemplo de Job
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  escrever-oi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprime "oi" no terminal
+        run: echo "oi!!!!!"
